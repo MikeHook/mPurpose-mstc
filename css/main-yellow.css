@@ -2377,6 +2377,7 @@ span.color-red {
 }
 .mainmenu {
   width: 100%;
+  height: 70px;
   /* general ul style */
   /* first level ul style */
   /* sub-menu */
@@ -2399,7 +2400,7 @@ span.color-red {
 .mainmenu .mainmenu-submenu-inner > li > a {
   font-size: 1.2em;
   padding: 1.2em 1.5em;
-  color: #999;
+  color: #666;
   display: inline-block;
   text-decoration: none;
 }
