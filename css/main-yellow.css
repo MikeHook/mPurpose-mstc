@@ -1871,6 +1871,15 @@ span.color-red {
   padding: 0;
   width: 100%;
 }
+#sequence div.transbox {
+  padding: 10px 0 20px 20px;
+  background-color: #000;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+  left: 15%;
+  top: 15%;
+}
 #sequence h2 {
   font-size: 4em;
   color: #FFF;
@@ -1880,11 +1889,11 @@ span.color-red {
   margin-top: 0;
 }
 #sequence h2 a {
-  color: #FFF;
+  color: #fff;
 }
 #sequence h3 {
   font-size: 2em;
-  color: #FFF;
+  color: #fff;
   text-shadow: 2px 2px 3px #444;
 }
 #sequence > .sequence-canvas > li {
@@ -2057,7 +2066,6 @@ span.color-red {
   font-size: 3.8em;
   text-transform: none;
   left: 0%;
-  width: 35%;
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
@@ -2095,7 +2103,6 @@ span.color-red {
   color: black;
   font-size: 2em;
   left: 35%;
-  width: 35%;
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
@@ -2153,7 +2160,7 @@ span.color-red {
   transition-duration: 1s;
 }
 @media only screen and (min-width: 992px) {
-  #sequence .title {
+  #sequence .transbox {
     width: 42%;
   }
 }

@@ -1641,6 +1641,16 @@ span.color-red{
 	width: 100%;
 }
 
+#sequence div.transbox
+  {
+  padding: 10px 0 20px 20px;
+  background-color:#000;
+  opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+  left:15%;
+  top: 15%;
+  }
+
 #sequence h2{
 	font-size: 4em;
 	color: #FFF;
@@ -1651,12 +1661,12 @@ span.color-red{
 }
 
 #sequence h2 a{
-	color: #FFF;
+	color: #fff;
 }
 
 #sequence h3{
 	font-size: 2em;
-	color: #FFF;
+	color: #fff;
 	text-shadow: 2px 2px 3px #444;
 }
 
@@ -1819,7 +1829,6 @@ span.color-red{
   font-size: 3.8em;
   text-transform: none;
   left: 0%;
-  width: 35%;
   .opacity(0);
   bottom: 60%;
   z-index: 50;
@@ -1846,7 +1855,6 @@ span.color-red{
   color: black;
   font-size: 2em;
   left: 35%;
-  width: 35%;
   .opacity(0);
   top: 40%;
 }
@@ -1886,7 +1894,7 @@ span.color-red{
 }
 
 @media only screen and (min-width: 992px) {
-  #sequence .title {
+  #sequence .transbox {
     width: 42%;
   }
 }
