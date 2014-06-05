@@ -1703,7 +1703,7 @@ span.color-red {
 	Footer Style
 --------------------------------------------------------------------------*/
 .footer {
-  background: #222;
+  background: #FFFF00;
   color: #A0A0A0;
   padding: 0 20px 10px 20px;
   border-top: 4px solid #000000;
@@ -1721,8 +1721,15 @@ span.color-red {
 .footer ul {
   padding: 0;
 }
+ul.footer-navigate-section {
+  width: 70%;
+  float: left;
+  padding-top: 10px;
+}
 .footer-navigate-section li {
   line-height: 20px !important;
+  display: inline-block;
+  padding-right: 10px;
 }
 .footer-stay-connected a {
   text-align: left;
@@ -1758,11 +1765,13 @@ span.color-red {
   text-align: center;
 }
 .footer-copyright {
-  text-align: center;
+  text-align: right;
   color: #7C7C7C;
   border-top: 1px dotted #7C7C7C;
   padding-top: 10px;
   font-size: 0.9em;
+  width: 30%;
+  float: right;
 }
 /*--------------------------------------------------------------------------
 +	Pagination Style (overrides Bootstrap style)
@@ -2381,7 +2390,7 @@ span.color-red {
   padding-bottom: 0;
 }
 .mainmenu-wrapper {
-  background: url(../img/header-background.png);
+  background: #ffff00;
   border-bottom: 4px solid #000000;
   z-index: 4;
 }
