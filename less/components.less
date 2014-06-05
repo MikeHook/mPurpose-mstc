@@ -1651,16 +1651,6 @@ ul.footer-navigate-section{
 	width: 100%;
 }
 
-#sequence div.transbox
-  {
-  padding: 10px 0 20px 20px;
-  background-color:#000;
-  opacity:0.6;
-  filter:alpha(opacity=60); /* For IE8 and earlier */
-  left:15%;
-  top: 15%;
-  }
-
 #sequence h2{
 	font-size: 4em;
 	color: #FFF;
@@ -1844,6 +1834,14 @@ ul.footer-navigate-section{
   z-index: 50;
 }
 
+#sequence .transbox {
+    padding: 10px 0 20px 20px;
+    background-color:#000;
+  left: 0%;
+    top: 15%;
+  .opacity(0);
+}
+
 #sequence > .sequence-canvas > li.animate-in{
 	background-position: 0 0;
 	.transition-duration(1.5s);
@@ -1855,7 +1853,19 @@ ul.footer-navigate-section{
   .transition-duration(0.5s);
 }
 
+#sequence .animate-in .transbox {
+  left: 15%;
+  .opacity(0.6);
+  .transition-duration(0.5s);
+}
+
 #sequence .animate-out .title {
+  left: 35%;
+  .opacity(0);
+  .transition-duration(0.5s);
+}
+
+#sequence .animate-out .transbox {
   left: 35%;
   .opacity(0);
   .transition-duration(0.5s);
@@ -1965,11 +1975,15 @@ ul.footer-navigate-section{
     z-index: 10;
   }
 
-  #sequence .animate-in .title {
+  #sequence .animate-in .title, 
+  #sequence .animate-in .transbox
+   {
     left: 0%;
   }
 
-  #sequence .animate-out .title {
+  #sequence .animate-out .title,
+   #sequence .animate-out .transbox
+   {
     left: -100%;
   }
 

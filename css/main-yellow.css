@@ -1880,15 +1880,6 @@ ul.footer-navigate-section {
   padding: 0;
   width: 100%;
 }
-#sequence div.transbox {
-  padding: 10px 0 20px 20px;
-  background-color: #000;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-  /* For IE8 and earlier */
-  left: 15%;
-  top: 15%;
-}
 #sequence h2 {
   font-size: 4em;
   color: #FFF;
@@ -2081,6 +2072,15 @@ ul.footer-navigate-section {
   bottom: 60%;
   z-index: 50;
 }
+#sequence .transbox {
+  padding: 10px 0 20px 20px;
+  background-color: #000;
+  left: 0%;
+  top: 15%;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
 #sequence > .sequence-canvas > li.animate-in {
   background-position: 0 0;
   -webkit-transition-duration: 1.5s;
@@ -2098,7 +2098,27 @@ ul.footer-navigate-section {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
+#sequence .animate-in .transbox {
+  left: 15%;
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
 #sequence .animate-out .title {
+  left: 35%;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#sequence .animate-out .transbox {
   left: 35%;
   -webkit-opacity: 0;
   -moz-opacity: 0;
@@ -2223,10 +2243,12 @@ ul.footer-navigate-section {
     margin-bottom: 0;
     z-index: 10;
   }
-  #sequence .animate-in .title {
+  #sequence .animate-in .title,
+  #sequence .animate-in .transbox {
     left: 0%;
   }
-  #sequence .animate-out .title {
+  #sequence .animate-out .title,
+  #sequence .animate-out .transbox {
     left: -100%;
   }
   #sequence .subtitle {
