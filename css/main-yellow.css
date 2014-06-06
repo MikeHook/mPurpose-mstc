@@ -499,6 +499,7 @@ a:hover {
 }
 .featured-news img,
 .latest-news img {
+  max-height: 120px;
   max-width: 100%;
   margin: 10px 0 10px 0;
   -webkit-border-radius: 5px;
