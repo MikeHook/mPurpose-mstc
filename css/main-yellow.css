@@ -130,6 +130,13 @@ a:hover {
 .service-wrapper p {
   margin-top: 0;
 }
+.home-social .service-wrapper {
+  min-height: 166px;
+  padding: 30px 10px 10px 10px;
+}
+.home-social .service-wrapper p {
+  margin-top: 10px;
+}
 /* Row */
 .service-wrapper-row {
   padding: 10px 0;
