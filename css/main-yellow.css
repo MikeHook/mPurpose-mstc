@@ -2412,6 +2412,11 @@ ul.footer-navigate-section {
   padding-top: 0;
   padding-bottom: 0;
 }
+.mainmenu-header {
+  background: #000000;
+  border-bottom: 0px;
+  z-index: 4;
+}
 .mainmenu-wrapper {
   background: #ffff00;
   border-bottom: 4px solid #000000;
@@ -2560,6 +2565,20 @@ ul.footer-navigate-section {
 /*--------------------------------------------------------------------------
 +	Extras Menu (Cart, Language, Login) Style
 --------------------------------------------------------------------------*/
+.mainmenu-header .menuextras {
+  font-size: 1.1em;
+  height: 30px;
+}
+.mainmenu-header .menuextras .extras a {
+  color: #fff;
+}
+.mainmenu-header .menuextras .extras a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+.mainmenu-header .menuextras .extras .active a {
+  font-weight: 600;
+}
 .menuextras {
   font-size: 0.85em;
   height: 30px;

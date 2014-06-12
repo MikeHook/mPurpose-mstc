@@ -2177,6 +2177,12 @@ ul.footer-navigate-section{
 	padding-bottom: 0;
 }
 
+.mainmenu-header{
+	background: #000000;
+	border-bottom: 0px;
+	z-index: 4;
+}
+
 .mainmenu-wrapper{
 	background: #ffff00;
 	border-bottom: 4px solid @theme-color;
@@ -2333,6 +2339,24 @@ ul.footer-navigate-section{
 /*--------------------------------------------------------------------------
 +	Extras Menu (Cart, Language, Login) Style
 --------------------------------------------------------------------------*/
+
+.mainmenu-header .menuextras {
+    font-size: 1.1em;
+    height: 30px;
+
+    .extras {
+        a {
+            color: #fff;
+            &:hover {
+                color: #ccc;
+                text-decoration: none;
+            }
+        }
+        .active a {
+            font-weight: 600;
+        }
+    }
+}
 
 .menuextras{
 	font-size: 0.85em;
