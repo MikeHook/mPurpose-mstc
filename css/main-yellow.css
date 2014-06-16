@@ -2478,8 +2478,6 @@ ul.footer-navigate-section {
   display: none;
   position: absolute;
   background: #000000;
-  width: 100%;
-  left: 0;
   z-index: 999;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -2508,7 +2506,6 @@ ul.footer-navigate-section {
 }
 .mainmenu-open .mainmenu-submenu {
   display: block;
-  padding-bottom: 3em;
 }
 .mainmenu-submenu h4 {
   color: #4d4d4d;
@@ -2518,7 +2515,10 @@ ul.footer-navigate-section {
   font-weight: 300;
 }
 .mainmenu-submenu ul {
-  margin-left: 20px;
+  margin: 20px;
+}
+.mainmenu-submenu ul li {
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 979px) {
   .mainmenu {

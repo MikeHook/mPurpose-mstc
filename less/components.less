@@ -2238,9 +2238,7 @@ ul.footer-navigate-section{
 	.mainmenu-submenu {
 		display: none;
 		position: absolute;
-		background: @theme-color;
-		width: 100%;
-		left: 0;
+		background: @theme-color;		
 		z-index: 999;
 		.translateZ(0);
 		.box-shadow(~"0 5px 5px rgba(0,0,0,0.4)");
@@ -2264,7 +2262,6 @@ ul.footer-navigate-section{
 .mainmenu-open{
 	.mainmenu-submenu {
 		display: block;
-		padding-bottom: 3em;
 	}
 }
 
@@ -2277,7 +2274,10 @@ ul.footer-navigate-section{
 		font-weight: 300;
 	}
 	ul{
-		margin-left: 20px;
+		margin: 20px;
+	}
+	ul li {
+		margin-bottom: 10px;
 	}
 }
 
