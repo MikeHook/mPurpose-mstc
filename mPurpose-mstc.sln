@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "mPurpose-mstc", ".", "{CEC008EE-2227-4E9E-BE81-E76A32171CEF}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "mPurpose-mstc", ".", "{86AFA3FD-7B72-4F79-AC3B-A3078CFEB122}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/mPurpose-mstc"
@@ -26,8 +26,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CEC008EE-2227-4E9E-BE81-E76A32171CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEC008EE-2227-4E9E-BE81-E76A32171CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AFA3FD-7B72-4F79-AC3B-A3078CFEB122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AFA3FD-7B72-4F79-AC3B-A3078CFEB122}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
