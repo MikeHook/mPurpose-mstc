@@ -103,6 +103,20 @@ a {
 a:hover {
   color: #000000;
 }
+img.image-right {
+  float: right;
+  -webkit-box-shadow: 0 0 5px #000;
+  -moz-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  color: 0 0 5px #000;
+}
+img.image-left {
+  float: left;
+  -webkit-box-shadow: 0 0 5px #000;
+  -moz-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  color: 0 0 5px #000;
+}
 /*--------------------------------------------------------------------------
 +	Services Style
 --------------------------------------------------------------------------*/
