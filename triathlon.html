@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"[]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ContentPlaceHolderDefault_head">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>The Mid Sussex Triathlon - Mid Sussex Triathlon Club
+    </title>
+    <link rel="stylesheet" type="text/css" href="http://www.midsussextriclub.com/css/event-runway.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.midsussextriclub.com/css/triclub-event.css" />
+
+    <!-- NAVIGATION MENU STYLES -->
+    <link rel="stylesheet" type="text/css" href="http://www.midsussextriclub.com/css/superfish.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.midsussextriclub.com/css/superfish-vertical.css" />
+    <!--<link rel="stylesheet" type="text/css" href="/css/superfish-navbar.css" />-->
+
+    <link rel="stylesheet" type="text/css" href="http://www.midsussextriclub.com/css/app-superfish-triclub.css" />
+    <!-- /NAVIGATION MENU STYLES -->
+
+    <!-- COMMON SCRIPTS -->
+    <script type="text/javascript" src="http://www.midsussextriclub.com/scripts/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="http://www.midsussextriclub.com/scripts/jquery.hoverIntent.js"></script>
+    <script type="text/javascript" src="http://www.midsussextriclub.com/scripts/jquery.bgiframe.min.js"></script>
+    <!-- /COMMON SCRIPTS -->
+    <!-- NAVIGATION MENU SCRIPTS -->
+    <script type="text/javascript" src="http://www.midsussextriclub.com/scripts/superfish.js"></script>
+    <!-- Super subs - advances width handling for sub menus. See http://users.tpg.com.au/j_birch/plugins/superfish/#sample5 -->
+    <!--<script type="text/javascript" src="http://www.midsussextriclub.com/scripts/supersubs.js"></script>-->
+    <!-- /NAVIGATION MENU SCRIPTS -->
+
+    <!-- CORE APPLICATION SCRIPTS -->
+    <script type="text/javascript" src="http://www.midsussextriclub.com/scripts/app-core.js"></script>
+    <!-- /CORE APPLICATION SCRIPTS -->
+
+    <!-- Google Analytics script -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-16134591-11']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="http://www.midsussextriclub.com/css/event-slider.css" />
+    <!--Call jQuery-->
+    <script type="text/javascript" src="http://www.midsussextriclub.com/scripts/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //Show Banner
+            $(".main_image .desc").show(); //Show Banner
+            $(".main_image .block").animate({ opacity: 0.85 }, 1); //Set Opacity
+
+            //Click and Hover events for thumbnail list
+            $(".image_thumb ul li:first").addClass('active');
+            $(".image_thumb ul li").click(function () {
+                //Set Variables
+                var imgAlt = $(this).find('img').attr("alt"); //Get Alt Tag of Image
+                var imgTitle = $(this).find('a').attr("href"); //Get Main Image URL
+                var imgDesc = $(this).find('.block').html(); 	//Get HTML of block
+                var imgDescHeight = $(".main_image").find('.block').height();	//Calculate height of block	
+
+                if ($(this).is(".active")) {  //If it's already active, then...
+                    return false; // Don't click through
+                } else {
+                    //Animate the Teaser				
+                    $(".main_image .block").animate({ opacity: 0, marginBottom: -imgDescHeight }, 250, function () {
+                        $(".main_image .block").html(imgDesc).animate({ opacity: 0.85, marginBottom: "0" }, 250);
+                        $(".main_image img").attr({ src: imgTitle, alt: imgAlt });
+                    });
+                }
+
+                $(".image_thumb ul li").removeClass('active'); //Remove class of 'active' on all lists
+                $(this).addClass('active');  //add class of 'active' on this list only
+                return false;
+
+            }).hover(function () {
+                $(this).addClass('hover');
+            }, function () {
+                $(this).removeClass('hover');
+            });
+
+            //Toggle Teaser
+            $("a.collapse").click(function () {
+                $(".main_image .block").slideToggle();
+                $("a.collapse").toggleClass("show");
+            });
+
+        });//Close Function
+    </script>
+
+    <!--TODO - Add these styles to a stylesheet-->
+    <style>
+        .mainmenu-header
+        {
+            background: none repeat scroll 0 0 #000000;
+            border-bottom: 0 none;
+            z-index: 4;
+            font-size: 15.4px;
+        }
+
+            .mainmenu-header .menuextras
+            {
+                height: 30px;
+            }
+
+                .mainmenu-header .menuextras .extras a
+                {
+                    color: #fff;
+                }
+
+                    .mainmenu-header .menuextras .extras a:hover
+                    {
+                        color: #ccc;
+                        text-decoration: none;
+                    }
+
+                .mainmenu-header .menuextras .extras .active a
+                {
+                    font-weight: 600;
+                }
+
+        .menuextras
+        {
+            height: 30px;
+        }
+
+            .menuextras ul
+            {
+                float: right;
+                list-style-type: none;
+                margin: 0;
+                padding: 3px 0;
+            }
+
+            .menuextras li
+            {
+                float: left;
+                padding: 0 8px;
+            }
+
+            .menuextras .extras li
+            {
+                padding: 0 8px;
+            }
+
+                .menuextras .extras li a
+                {
+                    color: #333;
+                }
+
+                    .menuextras .extras li a:hover
+                    {
+                        color: #333;
+                        text-decoration: none;
+                    }
+
+        .mpurpose-container
+        {
+            max-width: 1170px;
+            padding: 0 15px 0 15px;
+            margin: 0 auto 0 auto;
+            box-sizing: border-box;
+            font-family: Arial,Helvetica,sans-serif;
+            clear:both;
+        }
+
+        .footer
+        {
+            background: none repeat scroll 0 0 #ffff00;
+            border-top: 4px solid #000000;
+            box-shadow: 0 -1px 12px rgba(0, 0, 0, 0.4);
+            box-sizing: border-box;
+            color: #a0a0a0;
+            margin-top: 20px;
+            padding: 0 20px 10px;            
+            line-height: 20px;
+            min-height: 40px;
+            font-size: 14px;
+        }
+        
+        .footer *
+            {
+                box-sizing: border-box;
+            }            
+
+            .footer ul
+            {
+                padding: 0;
+            }
+
+        ul.footer-navigate-section
+        {
+            float: left;
+            padding-top: 10px;
+            width: 70%;
+            list-style-type: none;
+            margin: 0 0 10px 0;
+            text-align: left;
+        }
+
+        .footer-navigate-section li
+        {
+            display: inline-block;
+            line-height: 20px !important;
+            padding-right: 10px;
+        }
+        .footer-navigate-section li a  {
+                color: #000000;
+            }
+
+        .footer .row
+        {
+            margin: 0 -15px 0 -15px;
+            clear:both;
+            min-height: 40px;
+        }
+        .col-md-12 {
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+            width: 100%;
+            float:left;
+        }
+
+        .footer-copyright {
+    border-top: 1px dotted #7c7c7c;
+    color: #7c7c7c;
+    float: right;
+    font-size: 0.9em;
+    padding-top: 10px;
+    text-align: right;
+    width: 30%;
+}
+        .clear-float
+        {
+            clear:both;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="mainmenu-header">
+        <div class="mpurpose-container">
+            <div class="menuextras">
+                <div class="extras">
+                    <ul>
+                        <li class="active"><a href="index.html">Club Site</a> | </li>
+                        <li><a href="#">The Mid Sussex Triathlon</a> | </li>
+                        <li><a href="#">Juniors Tri Hub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="logo-header">
+            <div id="MSTC-logo">
+                <a href="/the-mid-sussex-triathlon.aspx" title="Mid Sussex Triathlon > Home">Mid Sussex Triathlon Club</a>
+            </div>
+            <div id="top-ads">
+                &nbsp;
+            </div>
+        </div>
+        <div id="menu">
+            <ul class="sf-menu">
+                <li class="mi-news"><a href="&#xD;&#xA;					#&#xD;&#xA;				">News</a><ul>
+                    <li class="child mi-latest-news"><a href="/the-mid-sussex-triathlon/news.aspx">Latest News</a></li>
+                    <li class="child mi-2011"><a href="/the-mid-sussex-triathlon/news/2011.aspx">2011</a></li>
+                    <li class="child mi-tips-for-beginners"><a href="/the-mid-sussex-triathlon/news/tips-for-beginners.aspx">Tips for Beginners</a></li>
+                    <li class="child mi-2012"><a href="/the-mid-sussex-triathlon/news/2012.aspx">2012</a></li>
+                </ul>
+                </li>
+                <li class="mi-race-info"><a href="&#xD;&#xA;					#&#xD;&#xA;				">Race Info</a><ul>
+                    <li class="child mi-race-instructions"><a href="/the-mid-sussex-triathlon/race-info/race-instructions.aspx">Race Instructions</a></li>
+                    <li class="child mi-course-maps"><a href="/the-mid-sussex-triathlon/race-info/course-maps.aspx">Course Maps</a></li>
+                    <li class="child mi-venue"><a href="/the-mid-sussex-triathlon/race-info/venue.aspx">Venue</a></li>
+                    <li class="child mi-results"><a href="/the-mid-sussex-triathlon/race-info/results.aspx">Results</a></li>
+                    <li class="child mi-feedback"><a href="/the-mid-sussex-triathlon/race-info/feedback.aspx">Feedback</a></li>
+                    <li class="child mi-swim-etiquette-the-unspoken-rules"><a href="/the-mid-sussex-triathlon/race-info/swim-etiquette-the-unspoken-rules.aspx">Swim Etiquette the unspoken rules</a></li>
+                    <li class="child mi-course-details"><a href="/the-mid-sussex-triathlon/race-info/course-details.aspx">Course Details</a></li>
+                    <li class="child mi-aquabike-any-pedalos-involved"><a href="/the-mid-sussex-triathlon/race-info/aquabike-any-pedalos-involved.aspx">Aquabike?? any pedalos involved?</a></li>
+                    <li class="child mi-medical-conditions"><a href="/the-mid-sussex-triathlon/race-info/medical-conditions.aspx">Medical conditions</a></li>
+                    <li class="child mi-course-familiarisation-day"><a href="/the-mid-sussex-triathlon/race-info/course-familiarisation-day.aspx">Course familiarisation day</a></li>
+                </ul>
+                </li>
+                <li class="mi-race-entry"><a href="&#xD;&#xA;					#&#xD;&#xA;				">Race Entry</a><ul>
+                    <li class="child mi-enter-online"><a href="/the-mid-sussex-triathlon/race-entry.aspx">Enter Online</a></li>
+                    <li class="child mi-entries-so-far"><a href="/the-mid-sussex-triathlon/race-entry/entries-so-far.aspx">Entries So Far</a></li>
+                    <li class="child mi-terms-conditions"><a href="/the-mid-sussex-triathlon/race-entry/terms-conditions.aspx">Terms &amp; Conditions</a></li>
+                    <li class="child mi-race-numbers-and-time-slot"><a href="/the-mid-sussex-triathlon/race-entry/race-numbers-and-time-slot.aspx">Race Numbers and time slot</a></li>
+                </ul>
+                </li>
+                <li class="mi-sponsors"><a href="/the-mid-sussex-triathlon/sponsors.aspx">Sponsors</a></li>
+                <li class="mi-sussex-weald-tri-series"><a href="/the-mid-sussex-triathlon/sussex-weald-tri-series.aspx">Sussex Weald Tri Series</a></li>
+                <li class="mi-contact-us"><a href="/the-mid-sussex-triathlon/contact-us.aspx">Contact Us</a></li>
+            </ul>
+            <div class="forum-link"><a href="http://forums.midsussextriclub.com">FORUMS</a></div>
+        </div>
+        <div id="body">
+
+            <div id="feature">
+                <!-- start of slider -->
+                <div id="Div1" class="container">
+                    <div class="main_image">
+                        <img src="http://www.midsussextriclub.com/images/event-home-triathlon.jpg" alt="Mid Sussex Triathlon 2011 - Entries Open" />
+                        <div class="desc">
+                            <a href="#" class="collapse">Close Me!</a>
+                            <div class="block">
+                                <h2>Entries for the 2014 Triathlon and Aquabike events are now CLOSED</h2>
+                                <p>
+                                    The event is now FULL, please <a
+                                        href="/the-mid-sussex-triathlon/contact-us.aspx"
+                                        title="Contact us">email us</a> if you wish to go on the waiting
+list.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image_thumb">
+                        <ul>
+                            <li>
+                                <a href="/images/event-home-triathlon.jpg">
+                                    <img src="/images/event-home-triathlon-thumb.jpg" alt="Mid Sussex Triathlon 2011 - Entries Open" /></a>
+                                <div class="block">
+                                    <h2>Entries for the 2014 Triathlon and Aquabike events are now CLOSED</h2>
+                                    <small>Yes, do it NOW!</small>
+                                    <p>
+                                        The event is now FULL, please <a
+                                            href="/the-mid-sussex-triathlon/contact-us.aspx"
+                                            title="Contact us">email us</a> if you wish to go on the waiting
+list.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/images/event-home-instructions.jpg">
+                                    <img src="/images/event-home-instructions-thumb.jpg" alt="Mid Sussex Triathlon 2011 - Race Instructions" /></a>
+                                <div class="block">
+                                    <h2>Race Instructions</h2>
+                                    <small>Make sure you know what to expect...</small>
+                                    <p>
+                                        Please make sure you read the race instructions before the race.
+A few things have changed this year so even if you have done the
+event before please read them again.
+                                    </p>
+
+                                    <p>
+                                        <a href="/the-mid-sussex-triathlon/race-info/race-instructions.aspx" title="Race Instructions">Race
+instructions »</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/images/event-home-news.jpg">
+                                    <img src="/images/event-home-news-thumb.jpg" alt="Mid Sussex Triathlon 2011 - Race News & Updates" /></a>
+                                <div class="block">
+                                    <h2>Race News & Updates</h2>
+                                    <small>News from our raving reporters...</small>
+                                    <p>
+                                        <a href="/the-mid-sussex-triathlon/news.aspx" title="News">Latest news from the
+race HQ.</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/images/event-home-pool.jpg">
+                                    <img src="/images/event-home-pool-thumb.jpg" alt="Evolution" /></a>
+                                <div class="block">
+                                    <h2>Entries So Far</h2>
+                                    <small>Entered? Paid? Check if you're in...</small>
+                                    <p>
+                                        Check to see if your entry has been confirmed. If you entered
+and paid more than 2 days ago then your name should be up. If not
+then please contact us.
+                                    </p>
+
+                                    <p>
+                                        <a href="/the-mid-sussex-triathlon/race-entry/entries-so-far.aspx" title="Entries So Far">View entries
+so far »</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/images/event-home-tips.jpg">
+                                    <img src="/images/event-home-tips-thumb.jpg" alt="Mid Sussex Triathlon 2011 - Tips for Beginners" /></a>
+                                <div class="block">
+                                    <h2>Tips For Beginners</h2>
+                                    <small>First time? Don't be afraid Uncle Steve will hold your hand...</small>
+                                    <p>
+                                        What kit do you really need for the race and how much training
+should you be doing?
+                                    </p>
+
+                                    <p>
+                                        <a href="/the-mid-sussex-triathlon/news/tips-for-beginners.aspx" title="Tips for Beginners">Read our
+tips for beginners</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/images/event-home-winners.jpg">
+                                    <img src="/images/event-home-winners-thumb.jpg" alt="Puzzled Putter" /></a>
+                                <div class="block">
+                                    <h2>Previous Years Results</h2>
+                                    <small>See who's completed the race and how they did.</small>
+                                    <p>
+                                        Many legends have taken part in the Mid Sussex Triathlon over
+the years. Check out the previous results to&nbsp; see what you've
+got to live up to.
+                                    </p>
+
+                                    <p><a href="/the-mid-sussex-triathlon/race-info/results.aspx" title="Results">Results »</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="clear-float">
+        </div>
+    <div class="footer">
+        <div class="mpurpose-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="no-list-style footer-navigate-section">
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="http://www.midsussextriclub.com/the-mid-sussex-triathlon/contact-us.aspx">Contact Us</a></li>
+                    </ul>
+                    <div class="footer-copyright">&copy; 2014 Mid Sussex Triathlon Club.</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
