@@ -510,7 +510,7 @@ img.member-directory-image {
 .featured-news .caption a,
 .latest-news .caption a {
   font-size: 1.1em;
-  font-weight: 600;
+  font-weight: 900;
   color: #535b60;
 }
 .featured-news .intro,
@@ -555,7 +555,7 @@ img.member-directory-image {
   font-size: 0.9em;
 }
 .faq-wrapper .accordion-inner .answer {
-  font-weight: 600;
+  font-weight: 900;
 }
 /*--------------------------------------------------------------------------
 +	Blog Style
@@ -610,7 +610,7 @@ img.member-directory-image {
 }
 .post-info .post-date .date {
   font-size: 0.7em;
-  font-weight: 600;
+  font-weight: 900;
 }
 .post-title h3 {
   font-size: 1.2em;
@@ -695,7 +695,7 @@ img.member-directory-image {
 }
 .comment-author {
   font-size: 1.3em;
-  font-weight: 600;
+  font-weight: 900;
   margin-bottom: 10px;
 }
 .comment-author img {
@@ -813,7 +813,7 @@ img.member-directory-image {
   font-size: 1.5em;
   text-align: center;
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 900;
   -webkit-border-radius: 7px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 7px;
@@ -981,7 +981,7 @@ span.color-red {
   border-bottom: 1px solid #E7E7E7;
 }
 .product-detail-info table td:first-child {
-  font-weight: 600;
+  font-weight: 900;
 }
 .product-detail-info table tr:last-child td {
   border-bottom: 0;
@@ -1160,13 +1160,13 @@ span.color-red {
 .events-list .event-date .event-day {
   color: #808080;
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 900;
   text-align: center;
 }
 .events-list .event-date .event-month {
   color: #CFCFCF;
   font-size: 1.1em;
-  font-weight: 600;
+  font-weight: 900;
   text-align: center;
 }
 .events-list .event-date .event-venue,
@@ -1374,7 +1374,7 @@ span.color-red {
 }
 .social-login .not-member p {
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 900;
   font-style: normal;
   margin-top: 30px;
   border-top: 1px solid #CCC;
@@ -1638,7 +1638,7 @@ span.color-red {
 }
 .sitemap li {
   padding: 10px 0;
-  font-weight: 600;
+  font-weight: 900;
 }
 .sitemap ul {
   list-style-type: none;
@@ -1872,7 +1872,7 @@ ul.footer-navigate-section {
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
-  font-weight: 600;
+  font-weight: 900;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-top: 3px solid #000000;
@@ -1884,7 +1884,7 @@ ul.footer-navigate-section {
 --------------------------------------------------------------------------*/
 .error-page-wrapper {
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 900;
   margin: 100px 0;
   text-align: center;
 }
@@ -2488,7 +2488,7 @@ ul.footer-navigate-section {
 .mainmenu > ul > li.active > a,
 .mainmenu .mainmenu-submenu-inner > li.active > a {
   color: #000000;
-  font-weight: 600 !important;
+  font-weight: 900 !important;
 }
 .mainmenu > ul > li.mainmenu-open a,
 .mainmenu .mainmenu-submenu-inner > li.mainmenu-open a,
@@ -2607,7 +2607,7 @@ ul.footer-navigate-section {
   text-decoration: none;
 }
 .mainmenu-header .menuextras .extras .active a {
-  font-weight: 600;
+  font-weight: 900;
 }
 .menuextras {
   font-size: 0.85em;
