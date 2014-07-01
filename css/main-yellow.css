@@ -2653,6 +2653,10 @@ ul.footer-navigate-section {
   color: #fff;
   background-color: #333 !important;
 }
+/*Member edit details forms*/
+.member-date {
+  padding: 7px 0 0 0;
+}
 /*--------------------------------------------------------------------------
 +	Buttons Style
 --------------------------------------------------------------------------*/
@@ -2750,6 +2754,17 @@ ul.footer-navigate-section {
   color: #FFF;
   text-decoration: none;
   border: 1px solid #3b3c41;
+}
+.btn-yellow {
+  border: 1px solid #cccc00;
+  color: #000;
+  background: none repeat scroll 0 0 #ffff00;
+}
+.btn-yellow:hover {
+  background: none repeat scroll 0 0 #FFFF80;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #FFFF80;
 }
 .btn-group.open .btn.dropdown-toggle {
   background: none repeat scroll 0 0 #3b3c41;
