@@ -98,10 +98,10 @@ h4 {
   margin-bottom: 10px;
 }
 a {
-  color: #000000;
+  color: #428bca;
 }
 a:hover {
-  color: #000000;
+  color: #245682;
 }
 img.image-right {
   float: right;
@@ -124,6 +124,9 @@ img.image-left {
 }
 .contact-form-wrapper {
   margin-top: 20px;
+}
+.member-service-link {
+  font-size: 1.5em;
 }
 /*--------------------------------------------------------------------------
 +	Services Style
