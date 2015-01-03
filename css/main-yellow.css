@@ -73,6 +73,9 @@ body {
   line-height: 20px;
   color: #535b60;
 }
+p {
+  font-size: 1.2em;
+}
 h1 {
   color: #53555c;
   font-family: 'Open Sans', sans-serif;
@@ -119,14 +122,24 @@ img.image-left {
   color: 0 0 5px #000;
   margin: 0 10px 10px 0;
 }
-.form-horizontal .control-label {
-  text-align: left;
-}
-.contact-form-wrapper {
-  margin-top: 20px;
-}
 .member-service-link {
   font-size: 1.2em;
+}
+/* form overrides */
+.form-wrapper {
+  margin-top: 20px;
+  padding: 10px;
+  border-style: dashed;
+  border-color: #535b60;
+  border-width: 1px;
+}
+.form-horizontal label,
+.form-horizontal .form-control {
+  font-size: 1.2em;
+}
+.form-horizontal .btn {
+  font-size: 1.2em;
+  font-weight: 600;
 }
 /*--------------------------------------------------------------------------
 +	Services Style
